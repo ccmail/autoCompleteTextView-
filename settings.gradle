@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='cjs707_test006'

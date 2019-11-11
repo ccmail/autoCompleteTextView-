@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="请输入居住地址"
+            android:textSize="25dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_address"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:completionHint="输入城市首字进行自动补全"
+            android:completionThreshold="1"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="出生日期"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/show_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/choose_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:endYear="2100"
+        android:startYear="1900"
+        android:spinnersShown="true"
+        android:theme="@android:style/Theme.Holo.Light"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:digits="0123456789zxcvbnmasdfghjklqwertyuiop_."
+            android:hint="请输入邮箱"/>
+
+        <Spinner
+            android:id="@+id/check_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/message_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:autoSizeTextType="uniform"></TextView>
+
+</LinearLayout>

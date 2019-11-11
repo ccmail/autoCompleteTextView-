@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="email">
+        <item>@163.com</item>
+        <item>@qq.com</item>
+        <item>@128.com</item>
+        <item>@gmail.com</item>
+    </array>
+</resources>
